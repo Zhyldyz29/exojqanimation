@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <style>
+        h1 {
+  color:black;
+  display: flex;
+  justify-content: center;
+   font-size: 40px;
+}
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.galerie img {
+  border: solid white 1px;
+  flex-grow: 1;
+  max-width: 150px;
+}
+     
+    </style>
+  </head>
+  <body>
+    <h1>Les animaux de la forêt</h1>
+    <div class="galerie">
+        <img src="biche.jpg">
+        <img src="lynx.jpg"> 
+        <img src="panda.jpg"> 
+        <img src="ratonlaveur.jpg"> 
+        <img src="renard.jpg"> 
+        <img src="tigre.jpg"> 
+
+    
+        </div>
+        <button id="af1">biche</button>
+        <button id="af2">lynx</button>
+        <button id="af3">panda</button>
+        <button id="af4">ratonlaveur</button>
+        <button id="af5">renard</button>
+        <button id="af6">tigre</button>
+       
+    
+    <script>
+            $(document).ready(function () {
+                $("#af1").click(function (){
+      $("#af1").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+                     
+            })
+
+            $("#af2").click(function (){
+      $("#af2").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+
+
+            })
+            $("#af3").click(function (){
+      $("#af3").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+
+
+            })
+
+            $("#af4").click(function (){
+      $("#af4").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+
+
+            })
+
+            $("#af5").click(function (){
+      $("#af5").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+
+
+            })
+
+            $("#af6").click(function (){
+      $("#af6").animate({left:"500px", top:"100px", width:"150px", height: "150px"}, 6000, function(){alert('fini')})
+
+
+            })
+        });
+    </script>
+    
+
+  </body>
+</html>
